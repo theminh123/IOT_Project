@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/bku"></ImageView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toRightOf="@+id/applogo"
+                android:gravity="center"
+                android:text="My Dashboard"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#29b3d2">
+
+            <ImageView
+                android:id="@+id/airhumiditylogo"
+                android:layout_width="55dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/airhumiditylogo"></ImageView>
+
+            <TextView
+                android:id="@+id/txtAirHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toRightOf="@+id/airhumiditylogo"
+                android:gravity="center"
+                android:text="Air Humidity: N/A"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#af6e57">
+
+            <ImageView
+                android:id="@+id/soilhumiditylogo"
+                android:layout_width="55dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/soil_humidity"></ImageView>
+
+            <TextView
+                android:id="@+id/txtSoilHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toRightOf="@+id/soilhumiditylogo"
+                android:gravity="center"
+                android:text="Soil Humidity: N/A"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#cc0000">
+
+            <ImageView
+                android:id="@+id/temperature"
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/temperature"></ImageView>
+
+            <TextView
+                android:id="@+id/txtTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/temperature"
+                android:gravity="center"
+                android:text="Temperature: N/A"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="#fff000">
+
+            <ImageView
+                android:id="@+id/light"
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/light"></ImageView>
+
+            <TextView
+                android:id="@+id/txtLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/light"
+                android:gravity="center"
+                android:text="Light: N/A"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:background="#db7093">
+
+            <TextView
+                android:id="@+id/txtBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Led"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/btnLed"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/txtBtn"
+                android:textSize="20dp"
+                app:colorBorder="@color/colorAccent"
+                app:on="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="IOT Semester 222"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
